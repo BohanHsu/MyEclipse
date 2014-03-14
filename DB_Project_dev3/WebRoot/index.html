@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="soccer-stats-guru">
+  <head>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <title>Soccer Stats Guru</title>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-3 left-nav">
+          <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat="nav in navs" ng-class="{ active: nav.active }">
+              <a href="{{ nav.url }}" ng-click="onClickNav($index)">{{ nav.title }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 right-content">
+          <div ng-view></div>
+          <!-- <div ng-include="contentPage"></div> -->
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

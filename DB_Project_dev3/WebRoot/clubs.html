@@ -1,0 +1,10 @@
+<div class="league-list">
+  <div ng-repeat="league in leagues">
+    <h3>{{ league.name }}</h3>
+    <ul>
+      <li ng-repeat="club in league.clubs">
+        <a href="/club/{{club.name}}">{{ club.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>

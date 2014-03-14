@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgba(0,0,0,.1);
+    height: 850px;
+    margin-top: 10px;
+}
+
+.left-nav {
+    background-color: #6889AE;
+    height: 850px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+.right-content {
+    padding-top: 15px;
+}
+
+.container {
+    width: 960px;
+}
+
+.content {
+    background-color: white;
+    height: 100%;
+}
+
+
+.player-info .attr {
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.player-info .attr-title {
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+}
+
+
+.player-info .attr-content {
+}
+
+.player-avatar {
+    /* float: left; */
+    width: 150px;
+    height: 150px;
+    border-radius: 0px;
+}
+
+
+.nav-pills>li>a {
+    border-radius: 0px;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+}
+
+.nav-pills>li>a:hover {
+    color: #6889A6;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover {
+    color: #6889A6;
+    background-color: #EEE;
+}
+
+.league-icon {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.home-team img {
+    float: right;
+}
+
+.visit-team img {
+    float: left;
+}

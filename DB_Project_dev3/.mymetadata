@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="DB_Project_dev3"
+  id="myeclipse.1384532874530"
+  context-root="/SoccerGuru"
+  j2ee-spec="5.0"
+  archive="DB_Project_dev3.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

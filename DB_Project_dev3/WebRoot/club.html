@@ -1,0 +1,18 @@
+<div>
+  <h2>{{ club.name }}</h2>
+
+  <table class="table table-striped" style="width: 70%">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in club.players">
+        <td><a href="/player?id={{player.id}}">{{ player.name }}</a></td>
+        <td>{{ player.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
